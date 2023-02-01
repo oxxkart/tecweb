@@ -116,7 +116,84 @@ asignaciones</p>
         var_dump($b);
         print_r($b);</p>
 
-        
+<p>3. Muestra el contenido de cada variable inmediatamente después de cada asignación,
+verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+arreglo):
+
+$a = “PHP5”; $z[] = &$a; $b = “5a version de PHP”; $c = $b*10; $a .= $b; $b *= $c; $z[0] = “MySQL”; </p>
+
+<?php 
+$a = "PHP5";
+    echo $a;
+        echo "<br>";
+        var_dump($a);
+        echo "<br>";
+        print_r($a);
+
+        echo "<br><br>";
+
+$z[] = &$a;
+    echo $z[0];
+    echo "<br>";
+    var_dump($z);
+    echo "<br>";
+    print_r($z);
+
+    echo "<br><br>";
+$b = "5a version de PHP";
+        echo $b;
+        echo "<br>";
+        var_dump($b);
+        echo "<br>";
+        print_r($b);
+
+        echo "<br><br>";
+$c = $b*10;
+        echo $c;
+        echo "<br>";
+        var_dump($c);
+        echo "<br>";
+        print_r($c);
+
+        echo "<br><br>";
+$a .= $b;
+    echo $a;
+    echo "<br>";
+    var_dump($a);
+    echo "<br>";
+    print_r($a);
+
+    echo "<br><br>";
+$b *= $c;
+    echo $b;
+        echo "<br>";
+        var_dump($b);
+        echo "<br>";
+        print_r($b);
+
+        echo "<br><br>";
+$z[0] = "MySQL";
+        echo $z;
+        echo "<br>";
+        var_dump($z);
+        echo "<br>";
+        print_r($z);
+
+        echo "<br><br>";
+?>
+<p>4. Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+la matriz $GLOBALS o del modificador global de PHP.</p>
+
+<?php
+function test() {
+    $a = "PHP5";
+    echo '$a en el ámbito global: ' . $GLOBALS['a'] . "<br>";
+    echo '$a en el ámbito actual: ' . $a . "<br>";
+    }
+    $a = "Contenido de ejemplo";
+    test();
+
+?>
 
 
 
