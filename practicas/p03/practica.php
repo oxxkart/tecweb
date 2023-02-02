@@ -252,9 +252,47 @@ function test1 () {
                         $z = "Contenido de ejemplo";
                         test6 ();
                         echo "<br><br>";
-
     ?>
 
+<p>5. Dar el valor de las variables $a, $b, $c al final del siguiente script:
+$a = “7 personas”;
+$b = (integer) $a;
+$a = “9E3”;
+$c = (double) $a;</p>
+
+<?php 
+    $a = "7 personas";
+    echo $a;
+    echo "<br><br>";
+    var_dump($a);
+    print_r($a);
+
+    echo "<br><br>";
+
+    $b = (integer) $a;
+        echo $b;
+        echo "<br><br>";
+        var_dump($b);
+        print_r($b);
+
+        echo "<br><br>";
+
+        $a = "9E3";
+        echo $a;
+        echo "<br><br>";
+        var_dump($a);
+        print_r($a);
+
+        echo "<br><br>";
+
+        $c = (double) $a;
+        echo $c;
+        echo "<br><br>";
+        var_dump($c);
+        print_r($c);
+
+        echo "<br><br>";
+?>
 
 
 </body>
