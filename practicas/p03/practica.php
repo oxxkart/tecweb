@@ -115,8 +115,10 @@ asignaciones</p>
         echo "<br><br>";
         var_dump($b);
         print_r($b);</p>
+        echo "<br><br>";
 
-<p>3. Muestra el contenido de cada variable inmediatamente después de cada asignación,
+        <h2>Inciso 3</h2>
+<p>Muestra el contenido de cada variable inmediatamente después de cada asignación,
 verificar la evolución del tipo de estas variables (imprime todos los componentes de los
 arreglo):
 
@@ -181,7 +183,8 @@ $z[0] = "MySQL";
 
         echo "<br><br>";
 ?>
-<p>4. Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+ <h2>Inciso 4</h2>
+<p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
 la matriz $GLOBALS o del modificador global de PHP.</p>
 
 <?php
@@ -253,8 +256,8 @@ function test1 () {
                         test6 ();
                         echo "<br><br>";
     ?>
-
-<p>5. Dar el valor de las variables $a, $b, $c al final del siguiente script:
+<h2>Inciso 5</h2>
+<p>Dar el valor de las variables $a, $b, $c al final del siguiente script:
 $a = “7 personas”;
 $b = (integer) $a;
 $a = “9E3”;
@@ -293,7 +296,8 @@ $c = (double) $a;</p>
 
         echo "<br><br>";
 ?>
-<p> 6. Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas 
+<h2>Inciso 6</h2>
+<p>Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas 
 usando la función var_dump(<datos>).
 
 $a = “0”;
@@ -348,23 +352,29 @@ $f = ($a XOR $b);
 
             echo "<br><br>"; 
             ?>
-<p> 7. Usando la variable predefinida $_SERVER, determina lo siguiente:
+<h2>Inciso 7</h2>
+<p>Usando la variable predefinida $_SERVER, determina lo siguiente:
 a. La versión de Apache y PHP,
 b. El nombre del sistema operativo (servidor),
 c. El idioma del navegador (cliente).</p>
 
 <p>a. La versión de Apache y PHP</p>
-
+<?php
+echo $_SERVER['SERVER_SIGNATURE'];
+echo "<br>";
+?>
 
 <p>b. El nombre del sistema operativo (servidor)</p>
-
+<?php
+echo $_SERVER['SERVER_SOFTWARE'];
+echo "<br>";
+?>
 
 <p>c. El idioma del navegador (cliente).</p>
-
-
-
-
-
+<?php
+echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+echo "<br>";
+?>
 </body>
 
 </html>
