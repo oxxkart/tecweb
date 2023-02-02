@@ -148,7 +148,7 @@ $b = "5a version de PHP";
         print_r($b);
 
         echo "<br><br>";
-$c = $b*10;
+$c = strlen($b)*10;
         echo $c;
         echo "<br>";
         var_dump($c);
@@ -173,7 +173,7 @@ $b *= $c;
 
         echo "<br><br>";
 $z[0] = "MySQL";
-        echo $z;
+        echo $z[0];
         echo "<br>";
         var_dump($z);
         echo "<br>";
@@ -192,8 +192,68 @@ function test() {
     }
     $a = "Contenido de ejemplo";
     test();
+    echo "<br><br>";
 
-?>
+function test1 () {
+    $a = "PHP5";
+	$z = &$a; //aqui no pude realziar con corchetes tuve muchas dudas//
+    echo '$z en el ámbito global: ' . $GLOBALS['z'] . "<br>";
+    echo '$z en el ámbito actual: ' . $z. "<br>";
+    }
+    $z= "Contenido de ejemplo";
+    test1 ();
+    echo "<br><br>";
+   
+    function test2 () {
+        $b = "5a version de PHP";
+        echo '$b en el ámbito global: ' . $GLOBALS['b'] . "<br>";
+        echo '$b en el ámbito actual: ' . $b. "<br>";
+        }
+        $b= "Contenido de ejemplo";
+        test2 ();
+        echo "<br><br>";
+
+     function test3 () {
+            $b = "5a version de PHP";
+            $c = strlen($b)*10;
+            echo '$c en el ámbito global: ' . $GLOBALS['c'] . "<br>";
+            echo '$c en el ámbito actual: ' . $c. "<br>";
+            }
+            $c = "Contenido de ejemplo";
+            test3 ();
+            echo "<br><br>";
+   
+            function test4 () {
+                $b = "5a version de PHP";
+                $a .= $b;
+                echo '$a . en el ámbito global: ' . $GLOBALS['a'] . "<br>";
+                echo '$a . en el ámbito actual: ' . $a. "<br>";
+                }
+                $a = "Contenido de ejemplo";
+                test4 ();
+                echo "<br><br>";
+
+                function test5 () {
+                    $c = 170;
+                    $b = "5a version de PHP";
+                    $b *= $c;
+                    echo '$b . en el ámbito global: ' . $GLOBALS['b'] . "<br>";
+                    echo '$b . en el ámbito actual: ' . $b. "<br>";
+                    }
+                    $b = "Contenido de ejemplo";
+                    test5 ();
+                    echo "<br><br>";
+
+                    function test6 () {
+                        $z[0] = "MySQL";
+                        echo '$z . en el ámbito global: ' . $GLOBALS['z'] . "<br>";
+                        echo '$z . en el ámbito actual: ' . $z[0]. "<br>";
+                        }
+                        $z = "Contenido de ejemplo";
+                        test6 ();
+                        echo "<br><br>";
+
+    ?>
 
 
 
