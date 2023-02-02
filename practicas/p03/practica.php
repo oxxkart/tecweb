@@ -293,6 +293,76 @@ $c = (double) $a;</p>
 
         echo "<br><br>";
 ?>
+<p> 6. Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas 
+usando la función var_dump(<datos>).
+
+$a = “0”;
+$b = “TRUE”;
+$c = FALSE;
+$d = ($a OR $b);
+$e = ($a AND $c);
+$f = ($a XOR $b);
+</p>
+    <?php  
+        $a = "0";
+        var_dump((bool) '$a');
+        echo "<br><br>";
+
+        $b = "TRUE";
+        var_dump((bool) '$b');
+        echo "<br><br>";
+        
+        $c = FALSE;
+        var_dump((bool) '$c');
+        echo "<br><br>";
+        
+        $d = ($a OR $b);
+        var_dump((bool) '$d');
+        echo "<br><br>";
+        
+        $e = ($a AND $c);
+        var_dump((bool) '$e');
+        echo "<br><br>";
+
+        $f = ($a XOR $b);
+        var_dump((bool) '$f');
+        echo "<br><br>";
+        
+        ?>
+
+        <p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
+            en uno que se pueda mostrar con un echo:</p>
+
+            <?php
+            $c=false;
+            $bool = $c? "true":"false";
+            echo $bool;
+
+            echo "<br><br>"; 
+
+            $a = "0";
+            $c=false;
+            $e=($a AND $c);
+            $bool = $e? "true":"false";
+            echo $bool;
+
+            echo "<br><br>"; 
+            ?>
+<p> 7. Usando la variable predefinida $_SERVER, determina lo siguiente:
+a. La versión de Apache y PHP,
+b. El nombre del sistema operativo (servidor),
+c. El idioma del navegador (cliente).</p>
+
+<p>a. La versión de Apache y PHP</p>
+
+
+<p>b. El nombre del sistema operativo (servidor)</p>
+
+
+<p>c. El idioma del navegador (cliente).</p>
+
+
+
 
 
 </body>
