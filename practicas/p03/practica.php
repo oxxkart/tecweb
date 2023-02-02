@@ -366,6 +366,9 @@ echo "<br>";
 
 <p>b. El nombre del sistema operativo (servidor)</p>
 <?php
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+
 echo $_SERVER['SERVER_SOFTWARE'];
 echo "<br>";
 ?>
