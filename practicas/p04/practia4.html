@@ -5,139 +5,198 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Proyecto_2.css">
+    <link rel="stylesheet" href="ProyectoFinalCSS.css">
+    <link rel="stylesheet" href="heroes.css">
 </head>
 <body>
-    <header>
-        <div class="menu container">
-            <a href="#" class="logo">logo</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="imagen/menu-btn.png" alt="menu-icono">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="#">catalogo</a></li>
-                    <li><a href="#">descuentos</a></li>
-                    <li><a href="#">apartados</a></li>
-                    <li><a href="#">nosotros</a></li>
-                </ul>
-            </nav>
+    <!--Navegador-->
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #111111d6;">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="imagen/zapato1.svg" alt="" width="150" height="150" class="d-inline-block align-text-top">                                    
+            </a>
+
+            <h1 id="TituloLogo"><b>Pasteleria</b></h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Zapateria</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><h2>Acerca</h2></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><h2>Ubicacion</h2></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h2>Tipos</h2>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Catalogo</a></li>
+                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
         </div>
+    </div>
+      </nav>
+  <!--1er separador-->
+    
+  <div id="separator-amiibos">
+    <div class="content bg-info"></div>
 
-        <div class="header-content container">
-
-            <div class="content">
-                <h1>Zapateria mexicana</h1>
-                <p>
-                    Encuentra calzado para toda la familia en Zapaterías México, 
-                    desde nacional hasta de importacion.
-                </p>
-                <a href="#">para mas informacion.</a>
-            </div>
-        
-        <img src="imagen/zapato1.svg" alt="">
-        </div>
-    </header>
-
-    <main class="services container">
-
-        <div class="service">
-            <img src="imagen/mujer.png" alt="">
-            <h3>Zapato dama</h3>
-            <p>
-            Luce lo mejor en zapatos, sandalias y tenis para mujer. 
-            Compra ahora las mejores marcas en moda para dama en un solo lugar. 
-            Entra ahora y encuentra regalos ...
-            </p>
-        </div>
-
-
-        <div class="service">
-            <img src="imagen/caballero.png" alt="">
-            <h3>Zapato caballero</h3>
-            <p>
-            Luce lo mejor en zapatos, sandalias y tenis para mujer. 
-            Compra ahora las mejores marcas en moda para dama en un solo lugar. 
-            Entra ahora y encuentra regalos ...
-            </p>
-        </div>
-
-        <div class="service">
-            <img src="imagen/niño.png" alt="">
-            <h3>Zapato niño</h3>
-            <p>
-            Luce lo mejor en zapatos, sandalias y tenis para mujer. 
-            Compra ahora las mejores marcas en moda para dama en un solo lugar. 
-            Entra ahora y encuentra regalos ...
-            </p>
-        </div>
-
-        <div class="service">
-            <img src="imagen/niña.png" alt="">
-            <h3>Zapato niña</h3>
-            <p>
-            Luce lo mejor en zapatos, sandalias y tenis para mujer. 
-            Compra ahora las mejores marcas en moda para dama en un solo lugar. 
-            Entra ahora y encuentra regalos ...
-            </p>
-        </div>
-
-        <div class="service">
-            <img src="imagen/deportivo.png" alt="">
-            <h3>Zapato deportivo</h3>
-            <p>
-            Luce lo mejor en zapatos, sandalias y tenis para mujer. 
-            Compra ahora las mejores marcas en moda para dama en un solo lugar. 
-            Entra ahora y encuentra regalos ...
-            </p>
-        </div>     
-    </main>
-
-    <section class="features container">
-        <div class="feature">
-            <h2>titulo de features</h2>
-            <h3>aqui es un subtitulo</h3>
-            <p>parrafo a llenar de la zpateria</p>
-            <p>otro parrafo a llenar</p>
-            <a href="#" class="btn-1">informacion????</a>
-
-        </div>
-        <img src="imagen/mas_zapatos.png" alt="">
-    </section>
-
-    <section class="contacts container">
-
-        <img src="imagen/zapato1.svg" alt="">
-        <div class="contact">
-            <h2>
-                Register
-            </h2>
-            <form>
-                <input type="email" class="btn-2">
-                <input type="submit" value="Enviar" class="btn-3">
-                
-            </form>
-            <img src="imagen/zapato2.svg" alt="">
-        </div>
-    </section>
-
-    <footer>
-
+    <div id="amiibos" class="px-5 pb-5 bg-danger">
         <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text shadow">Lo mejor, a tu alcance.</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-ms-2 row-cols-md-3">
+                    <div class="col-sm">
+                        
+                        <a href="chokomoka.html"><img src="ImgCarrucel1.jpg" alt="" class="w-100 amiibo"></a>
+                        <div class="text-center"><span class="amiibo-name h5 p-2">Chocomoka </span></div>
+                    </div> 
+                    <div class="col-sm">
+                        <a href="fresa_piyon.html"><img src="ImgCarrucel2.jpg" alt="" class="w-100 amiibo"></a>
+                        <div class="text-center"><span class="amiibo-name h5 p-2">Fresa-piñon</span></div>
+                    </div> 
+                    <div class="col-sm">
+                        <a href="vainilla_limon.html"><img src="ImgCarrucel3.jpg" alt="" class="w-100 amiibo"></a>
+                            <div class="text-center"><span class="amiibo-name h5 p-2">Vainilla-limon</span></div>
+                        </div> 
+                    <div class="col-sm">
+                        <a href="fiesta_frutas.html"><img src="ImgCarrucel4.jpg" alt="" class="w-100 amiibo"></a>
+                                <div class="text-center"><span class="amiibo-name h5 p-2">Fiesta de frutas</span></div>
+                            </div>
+                    <div class="col-sm">
+                        <a href="choco_amargo.html"><img src="ImgCarrucel5.jpg" alt="" class="w-100 amiibo"></a>
+                                <div class="text-center"><span class="amiibo-name h5 p-2">Chocolate semiamargo</span></div>
+                            </div>
+                    <div class="col-sm">
+                        <a href="pasteles_bordados.html"><img src="ImgCarrucel6.jpg" alt="" class="w-100 amiibo"></a>
+                                
+                                <div class="text-center"><span class="amiibo-name h5 p-2">Pasteles bordados</span></div>
+                            </div>
+                            
+            </div>
+        </div>
+    </div>
+</div>
+       <!--2do Carrucel-->
 
-            <div class="enlaces">
-                <h3>logo</h3>
-                <div class="enlace">
-                    <li><a href="#">enlace1</a></li>
-                    <li><a href="#">enlace2</a></li>
-                    <li><a href="#">enlace3</a></li>
-                    <li><a href="#">enlace4</a></li>
+       <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="carrucel1.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="carrucel2.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="carrucel6.jpg" alt="" class="d-block w-100">
+            </div>
+            </div>
+        </div>
+
+<!--2do separador-->
+    
+  <div id="separator-amiibos">
+    <div class="content bg-info"></div>
+
+    <div id="amiibos" class="px-5 pb-5 bg-danger">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text shadow">Lo mejor, a tu alcance.</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-ms-2 row-cols-md-3">
+                <div class="col-sm">
+                    <a href="pasteles_fondant.html"><img src="carrucel1.jpg" alt="" class="w-100 amiibo"></a>
+                    <div class="text-center"><span class="amiibo-name h5 p-2">Fondant </span></div>
+                </div> 
+                    <div class="col-sm">
+                        <a href="pasteles_bodas.html"><img src="carrucel2.jpg" alt="" class="w-100 amiibo"></a>
+                        <div class="text-center"><span class="amiibo-name h5 p-2">Boda </span></div>
+                    </div> 
+                    <div class="col-sm">
+                        <a href="pasteles_xv.html"><img src="carrucel3.jpg" alt="" class="w-100 amiibo"></a>
+                            <div class="text-center"><span class="amiibo-name h5 p-2"> XV años Chantilly</span></div>
+                        </div> 
+                    <div class="col-sm">
+                        <a href="pasteles_floral.html"><img src="carrusel4.jpg" alt="" class="w-100 amiibo"></a>
+                                <div class="text-center"><span class="amiibo-name h5 p-2">Boda floral</span></div>
+                            </div>
+                    <div class="col-sm">
+                        <a href="pasteles_3ayos.html"><img src="carrusel5.jpg" alt="" class="w-100 amiibo"></a>
+                                <div class="text-center"><span class="amiibo-name h5 p-2">3 años</span></div>
+                            </div>
+                    <div class="col-sm">
+                        <a href="pasteles_comunion.html"><img src="carrucel6.jpg" alt="" class="w-100 amiibo"></a>
+                                <div class="text-center"><span class="amiibo-name h5 p-2">1ra comunion</span></div>
+                            </div>
+                            
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+              
+         <div id="footer" class="p-5">
+            <div class="container w-50 pt-5">
+                <div class="row row-cols-md-2 justify-content-md-center">
+                    <div class="col text-center">
+                        <a href="#">
+                            <button class="btn btn-lg rounded-pill btn-warning w-100 p-3 shadow-sm font-weight-bold">Inicio</button>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-md-center py-5">
+                    <div class="col text-center font-weight-light">
+                        <p>Condiciones generales Política de privacidad Política de cookies © 2022 La Pasteleria
+                            Te recordamos que no está permitida la venta de la replica de estos productos.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row justify-content-center">
+                <div class="col-2"><a href="https://es-la.facebook.com/"><img src="face.jpg" alt="" class="w-25 amiibo"></a></div>
+                <div class="col-2"><a href="https://twitter.com/?lang=es"><img src="twitter.jpg" alt="" class="w-25 amiibo"></a></div>
+                <div class="col-2"><a href="https://www.tiktok.com/es/"><img src="tik.jpg" alt="" class="w-25 amiibo"></a></div>
+                <div class="col-2"><a href="https://www.instagram.com/?hl=es"><img src="instagram.jpg" alt="" class="w-25 amiibo"></a></div>
+                <div class="col-2"><a href="https://www.google.com.mx/"><img src="goo.jpg" alt="" class="w-25 amiibo"></a></div>
+            </div>  
+
+        </div>
+        
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
