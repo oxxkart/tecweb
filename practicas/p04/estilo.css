@@ -41,7 +41,7 @@ header
 
 .menu .logo
 {
-    font-weight: 700;
+    font-weight: 50;
     font-size: 25px;
     color: #ffffff;
 }
@@ -91,14 +91,15 @@ header
  .content h1
  {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 50px;
+    margin: 100px 0px 0px 50px;
  }
 
  .content p
  {
-    margin-top: 25px;
+    margin-top: 50px;
     color: #ffffff;
     font-size: 20px;
  }
@@ -161,7 +162,7 @@ header
 
  .features img 
  {
-    width: 350px;
+    width: 550px;
  }
 
  .feature
@@ -352,8 +353,8 @@ header
     }
     .features img 
     {
-        width: 150px;
-        margin: opx;
+        width: 450px;
+        margin: 0px;
     }
     .feature 
     {

@@ -91,14 +91,15 @@ header
  .content h1
  {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 50px;
+    margin: 100px 0px 0px 50px;
  }
 
  .content p
  {
-    margin-top: 25px;
+    margin-top: 50px;
     color: #ffffff;
     font-size: 20px;
  }
@@ -339,6 +340,12 @@ header
         flex-direction: column;
         padding: 30px 30px 0px 30px;
     }
+
+    .services img 
+    {
+        width: 350px;
+        margin: 0px;
+    }
     .service
     {
         margin-bottom: 30px;
@@ -352,8 +359,8 @@ header
     }
     .features img 
     {
-        width: 150px;
-        margin: opx;
+        width: 450px;
+        margin: 0px;
     }
     .feature 
     {
