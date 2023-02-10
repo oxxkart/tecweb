@@ -25,12 +25,11 @@
             if (!empty($age)&&!empty($sex)) {
 
 				if ($sex == 'femenino' && $age >= 18 && $age <= 35) {
-					echo 'Bienvenida, usted está en el rango de edad permitido'.$age.' '.$sex';
-					//echo '<p>Edad: '.$age.'<br>';
-					//echo 'Sexo: '.$sex.'</p>';
+					echo "Bienvenida, usted está en el rango de edad permitido: " .$age. ", " .$sex. ".";
+					
 					}
 				else{	
-					echo 'Lo siento no tienes los requisitos necesarios para accesar';
+					echo "Lo siento no tienes los requisitos necesarios para accesar";
 				}	
             }
         ?>

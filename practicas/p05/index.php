@@ -158,7 +158,7 @@
         <p>
             R:
         </p>
-        <form id="formulario_1" action="/src/script.php" method="post">
+        <form id="formulario_1" action="./src/script.php" method="post">
         <fieldset>
             <legend>Información Personal</legend>
             <ol>
