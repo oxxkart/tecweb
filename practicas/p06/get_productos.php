@@ -18,7 +18,7 @@
         /** NOTA: con @ se suprime el Warning para gestionar el error por medio de código */
 
 		/** comprobar la conexión */
-		if ($link->connect_errno) 
+		if ($link->connect_error) 
 		{
 			die('Falló la conexión: '.$link->connect_error.'<br/>');
 			//exit();

@@ -11,7 +11,7 @@
 		@$link = new mysqli('localhost', 'root', '', 'marketzone');	
 
 		/** comprobar la conexión */
-		if ($link->connect_errno) 
+		if ($link->connect_error) 
 		{
 			die('Falló la conexión: '.$link->connect_error.'<br/>');
 			    /** NOTA: con @ se suprime el Warning para gestionar el error por medio de código */
