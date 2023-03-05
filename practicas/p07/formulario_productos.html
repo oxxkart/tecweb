@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript">
+			
+			function validacion() {
+				var name = document.getElementById ("nombre").value;
+				var brand = document.getElementById ("marca").value;
+				var model = document.getElementById ("modelo").value;
+				var price = document.getElementById ("precio").value;
+				var unit = document.getElementById ("unidades").value;
+				var img = document.getElementById ("imagen").value;
+				var details = document.getElementById ("detalles").value;
+			
+				if (name === "" || brand === "" || model === "" || price === "" || unit === "" || img === "" || details === "") {
+					alert("Campo vacio, por favor verifica que todo este correctamente llenado");
+					return false;
+				}
+			
+					var nameRegex = /^[a-zA-Z0-9\s]+$/;  
+					var brandRegex = /^[a-zA-Z\s]+$/;    
+					var modelRegex = /^[a-zA-Z0-9\s]+$/; 
+					var priceRegex = /^[0-9]+(\.[0-9]{1,2})?$/;
+					var unitRegex = /^[0-9]+$/;          
+					var maxDetailsLength = 300;       
+				  
+					if (!nameRegex.test(name)) {
+					  alert("El nombre de producto solo puede contener letras, números y espacios.");
+					  return false;
+					}
+				  
+					if (!brandRegex.test(brand)) {
+					  alert("La marca solo puede contener letras y espacios.");
+					  return false;
+					}
+				  
+					if (!modelRegex.test(model)) {
+					  alert("El modelo solo puede contener letras, números y espacios.");
+					  return false;
+					}
+				  
+					if (!priceRegex.test(price)) {
+					  alert("El precio debe ser un número con hasta 2 decimales (por ejemplo, 10.99).");
+					  return false;
+					}
+				  
+					if (!unitRegex.test(unit)) {
+					  alert("Las unidades deben ser un número entero positivo.");
+					  return false;
+					}
+				  
+					if (details.length > maxDetailsLength) {
+					  alert("Los detalles no pueden ser más largos de " + maxDetailsLength + " caracteres");
+					 return false;
+					}
+			
+					return true;
+			}
+					</script>
+	</head>
+	<body>
+        <h1>Datos del Producto</h1>
+		<form id="formulario" action="http://localhost:83/Tecnologiasweb/tecweb/practicas/p07/set_producto_v2.php" method="post">
+            <ul>
+                <li><label for="form-name">Nombre:</label> <input type="text" name="nombre" id="nombre"></li>
+                <li><label for="form-marca">Marca:</label> <input type="text" name="marca" id="marca"></li>
+                <li><label for="form-modelo">Modelo:</label> <input type="text" name="modelo" id="modelo"></li>
+                <li><label for="form-precio">Precio:</label> <input type="number" step="1.5" min="0" name="precio" id="precio"></li>
+                <li><label for="form-detalles">Detalles:</label> <input type="text" name="detalles" id="detalles"></li>
+                <li><label for="form-unidades">Unidades</label> <input type="number"  min ="0" name="unidades" id="unidades"></li>
+                <li><label for="form-imagen">Imagen</label> <input type="text" name="imagen" id="imagen"></li>
+              </ul>
+			<input type="button" value="Agregar" name="agregar" onClick="validacion()">
+            <input type="Reset">
+		</form>
+	</body>
+</html>
+
