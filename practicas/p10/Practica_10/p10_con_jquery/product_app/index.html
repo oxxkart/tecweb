@@ -6,7 +6,7 @@
     <!-- BOOTSTRAP 4  -->
     <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
   </head>
-  <body>
+  <body onload="init()">
 
     <!-- BARRA DE NAVEGACIÓN  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,7 +37,7 @@
                 <div class="form-group">
                   <textarea class="form-control" id="description" cols="30" rows="10" placeholder="JSON de producto"></textarea>
                 </div>
-                <input type="hidden" id="productId">
+                <input type="hidden" id="product_Id">
                 <button class="btn btn-primary btn-block text-center" type="submit">
                   Agregar Producto
                 </button>
@@ -48,7 +48,7 @@
 
         <!-- TABLA  -->
         <div class="col-md-7">
-          <div class="card my-4" id="product-result">
+          <div class="card my-4 d-none" id="product-result">
             <div class="card-body">
               <!-- RESULTADO -->
               <ul id="container"></ul>
@@ -68,12 +68,12 @@
         </div>
       </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- Lógica del Frontend -->
-    <script src="app.js"></script>
+    <script src="app_v2.js"></script>
   </body>
 
 </html>
