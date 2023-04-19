@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CatalogoVOD>
+    <cuenta>
+        <correo email="orodriguezflores636@gmail.com"/>
+        <perfiles>
+            <perfil nombre="Rodriguez Oscar" idioma="Ingles"/>
+            <perfil nombre="Rodriguez Miguel Angel" idioma="Español"/>
+        </perfiles>
+    </cuenta>
+    <contenido>
+        <peliculas>
+            <genero nombre="Terror">
+                <titulo>La morgue
+                    <duracion>1h 45min</duracion>
+                </titulo>
+                <titulo>El conjuro
+                    <duracion>2h 15min</duracion>
+                </titulo>
+                <titulo>Terror en amityville
+                    <duracion>1h 53min</duracion>
+                </titulo>
+                <titulo>El exorcista
+                    <duracion>2h 13min</duracion>
+                </titulo>
+            </genero>
+            <genero nombre="Romanticas">
+                <titulo>Pide al tiempo que vuelva
+                    <duracion>2h 23min</duracion>
+                </titulo>
+                <titulo>Yo antes de ti
+                    <duracion>1h 50min</duracion>
+                </titulo>
+                <titulo>Los puentes de madison
+                    <duracion>1h 39min</duracion>
+                </titulo>
+                <titulo>La casa del lago
+                    <duracion>2h 6min</duracion>
+                </titulo>
+            </genero>
+        </peliculas>
+        
+        <programas>
+            <genero nombre="Ficcion">
+                <titulo>The Last of us
+                    <duracion>1 temporada</duracion>
+                </titulo>
+                <titulo>Band of brothers
+                    <duracion>1 temporada</duracion>
+                </titulo>
+                <titulo>The Walking dead
+                    <duracion>12 temporadas</duracion>
+                </titulo>
+                <titulo>The last kingdom
+                    <duracion>3 temporadas</duracion>
+                </titulo>
+            </genero>
+            <genero nombre="Comedia">
+                <titulo>Big band teory
+                    <duracion>15 temporada</duracion>
+                </titulo>
+                <titulo>El show de los 70´s
+                    <duracion>10 temporadas</duracion>
+                </titulo>
+                <titulo>Salvados por la campana
+                    <duracion>15 temporada</duracion>
+                </titulo>
+                <titulo>El Principe del Rap
+                    <duracion>5 temporadas</duracion>
+                </titulo>
+            </genero>
+        </programas>
+    </contenido>
+</CatalogoVOD>
