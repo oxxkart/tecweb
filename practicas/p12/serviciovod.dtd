@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT cuenta (perfiles)>
+<!ATTLIST cuenta correo CDATA #REQUIRED>
+
+<!ELEMENT genero (titulo+)>
+<!ATTLIST genero nombre (Dramas | Ficcion | Romanticas | Terror) #REQUIRED>
+
+<!ELEMENT perfil EMPTY>
+<!ATTLIST perfil
+usuario CDATA #REQUIRED
+idioma CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo
+duracion CDATA #REQUIRED>
+	
+<!ELEMENT perfiles (perfil+)>
+<!ELEMENT contenido (peliculas, programas)>
+<!ELEMENT peliculas (genero+)>
+<!ELEMENT programas (genero+)>
+<!ELEMENT CatalogoVod (cuenta, contenido)>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cinefanatico SYSTEM "C:\xampp\htdocs\Tecnologiasweb\tecweb\practicas\p12\cinefanatico.dtd">
+<cinefanatico>
+    <tarjeta noserie="4069755842617589" visitas="2" puntos="78">
+        <nombre>Ma Estela Flores</nombre> 
+        <correo>Ma_flores@gmail.com</correo>
+        <telefono tipo="movil">2221928814</telefono>
+        <telefono tipo="casa">2227853992</telefono>
+    </tarjeta>
+    <tarjeta noserie="15973571148632597" visitas="2" puntos="34">
+        <nombre>Araceli Rodriguez</nombre>
+        <correo>ary_rdz@gmail.com</correo>
+        <telefono tipo="movil">2228494845</telefono>
+    </tarjeta>
+    <tarjeta noserie="2589852145687894" visitas="0" puntos="100">
+        <nombre>Santiago Rivera</nombre>
+        <correo>Rivera_san@gmailcom</correo>
+    </tarjeta>
+</cinefanatico>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CatalogoVod>
+    <cuenta correo="">
+        <perfiles>
+            <perfil usuario="Rdz Oscar" idioma="español"/>
+            <perfil usuario="Rdz Miguel" idioma="español"/>
+        </perfiles>
+    </cuenta>
+    <contenido>
+        <peliculas>
+            <genero nombre="Dramas">
+                <titulo duracion="1h 45min">Los puentes de madison
+                    <video id="1">&lt;</video>
+                </titulo>
+                <titulo duracion="1h 33min">Siempre a tu lado
+                    <![CDATA[<video id="11">&lt;</video>]]>
+                </titulo>
+                <titulo duracion="1h 53min">500 dias sin ella
+                    <![CDATA[<video id="11">&lt;</video>]]>
+                </titulo>
+                <titulo duracion="2h 13min">No dejes de mirar
+                    <video id="1">&lt;</video>
+                </titulo>
+            </genero>
+            <genero nombre="Romanticas">
+                <titulo duracion="2h 23min">Pide al tiempo que vuelva</titulo>
+                <titulo duracion="1h 50min">Yo antes de ti</titulo>
+                <titulo duracion="1h 39min">La casa del lago</titulo>
+                <titulo duracion="2h 6min">El descanso</titulo>
+            </genero>
+        </peliculas>
+        <programas>
+            <genero nombre="Ficcion">
+                <titulo duracion="1 temporada">The lord of the rings: Anillos del poder</titulo>
+                <titulo duracion="1 temporada">Game of the trones</titulo>
+                <titulo duracion="3 temporadas">Titans</titulo>
+                <titulo duracion="3 temporadas">Gothic</titulo>
+            </genero>
+            <genero nombre="Terror">
+                <titulo duracion="1 temporada">The Walking dead</titulo>
+                <titulo duracion="10 temporadas">The last of us</titulo>
+                <titulo duracion="1 temporada">Chapelwaite</titulo>
+                <titulo duracion="3 temporadas">Lo que vi</titulo>
+            </genero>
+        </programas>
+    </contenido>
+</CatalogoVod>
+
