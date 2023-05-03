@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="C:\xampp\htdocs\Tecnologiasweb\tecweb\practicas\p14\catalogovod.xsl" type="text/xsl"?>
+<CatalogoVod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="C:\xampp\htdocs\Tecnologiasweb\tecweb\practicas\p12\serviciovod4.xml">
+    <cuenta correo="orflores@outlook.com">
+        <perfiles>
+            <perfil usuario="Oscar Rodriguez" idioma="español"/>
+        </perfiles>
+    </cuenta>
+    <contenido>
+        <peliculas region="USA">
+            <genero nombre="Dramas">
+                <titulo duracion="1h 45min" clasificacion="Familiar">Los puentes de madison </titulo>
+                <titulo duracion="1h 33min" clasificacion="Familiar">Siempre a tu lado</titulo>
+                <titulo duracion="1h 53min" clasificacion="Familiar">500 dias sin ella</titulo>
+                <titulo duracion="1h 38min" clasificacion="18+">No dejes de mirar</titulo>
+            </genero>
+            <genero nombre="Romanticas">
+                <titulo duracion="2h 23min" clasificacion="Familiar">Pide al tiempo que vuelva</titulo>
+                <titulo duracion="1h 50min" clasificacion="13+">Yo antes de ti</titulo>
+                <titulo duracion="1h 39min" clasificacion="Familiar">La casa del lago</titulo>
+                <titulo duracion="2h 6min" clasificacion="13+">El descanso</titulo>
+            </genero>
+        </peliculas>
+         
+        <series region="USA">
+            <genero nombre="Ficcion">
+                <titulo duracion="1 temporada" clasificacion="13+" capitulos="9">The lord of the rings: Anillos del poder</titulo>
+                <titulo duracion="1 temporada" clasificacion="11+" capitulos="6">Game of the trones</titulo>
+                <titulo duracion="4 temporadas" clasificacion="14+" capitulos="34">Titans</titulo>
+                <titulo duracion="3 temporadas" clasificacion="16+" capitulos="26">Gotham</titulo>
+            </genero>
+            <genero nombre="Terror">
+                <titulo duracion="1 temporada" clasificacion="16+" capitulos="12">The Walking dead</titulo>
+                <titulo duracion="10 temporadas" clasificacion="18+" capitulos="107">The last of us</titulo>
+                <titulo duracion="1 temporada" clasificacion="16+" capitulos="9">Chapelwaite</titulo>
+                <titulo duracion="3 temporadas" clasificacion="16+" capitulos="18">Lo que vi</titulo>
+            </genero>
+        </series>
+    </contenido>
+</CatalogoVod>
+
+
