@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Tipos complejos anonimos -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-    xmlns:tw="http://tecnologiasweb.com.mx"
-    targetNamespace="http://tecnologiasweb.com.mx"
-    elementFormDefault="qualified" attributeFormDefault="unqualified">
-    
-    <xsd:element name="Spotify">
-        <xsd:complexType>
-                <xsd:sequence minOccurs="1" maxOccurs="unbounded">
-                    <xsd:element name="Cuenta">
-                        <xsd:complexType>
-                            <xsd:all>
-                                <xsd:element name="Nombre" type="xsd:string"/>
-                                <xsd:element name="Correo" type="xsd:string"/>
-                                <xsd:element minOccurs="0" name="Telefono">
-                                    <xsd:complexType>
-                                        <xsd:simpleContent>
-                                            <xsd:extension base="xsd:string">
-                                                <xsd:attribute name="tipo" type="xsd:string" use="required"/>
-                                            </xsd:extension>
-                                        </xsd:simpleContent>
-                                    </xsd:complexType>
-                                </xsd:element>
-                            </xsd:all>
-                            <xsd:attribute name="id" type="xsd:int" use="required"/>
-                            <xsd:attribute name="plan" type="xsd:string" use="required"/>
-                            <xsd:attribute name="fechaIni" type="xsd:date"/>
-                            <xsd:attribute name="fechaFin" type="xsd:date"/>
-                        </xsd:complexType>
-                    </xsd:element>
-                </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
- </xsd:schema>
-    
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://tecnologiasweb.com.mx" xmlns:tw="http://tecnologiasweb.com.mx">
+    <xs:element name="Spotify" type="tw:spotifyType"> </xs:element>
+    <xs:complexType name="cuentaType">
+        <xs:all>
+            <xs:element minOccurs="0" name="Telefono">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="tipo" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Correo" type="xs:string"/>
+            <xs:element name="Nombre" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="fechaIni"/>
+        <xs:attribute name="fechaFin"/>
+        <xs:attribute name="id" use="required"/>
+        <xs:attribute name="plan" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="spotifyType">
+        <xs:all>
+            <xs:element name="Cuenta" type="tw:cuentaType"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
